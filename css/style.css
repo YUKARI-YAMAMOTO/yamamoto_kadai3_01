@@ -1,0 +1,62 @@
+@charset "utf-8";
+body {
+    background-color: #eeeeee;
+    max-width: 960px;
+}
+h1 {
+    color: #048171;
+    max-width: 960px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+}
+li {
+    width: 31.25%;
+    background-color: #ffffff;
+}
+h2 {
+    color: #048171;
+    border-left: 10px solid #048171;
+    margin: 10px;
+}
+p {
+    margin: 10px;
+}
+@media screen and (max-width: 400px) {
+    header {
+        flex-direction: column;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    li {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+/* ===質問===
+今回class名を使わずにcssの設定を書きましたが、
+タグで設定可能な場合は、class名を使う必要はないですか？
+リストの要素が増えた場合などに使用すればいいでしょうか？　*/
+
+/* .menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 10px;
+} */
+
+/* .service {
+    width: 31.25%;
+} */
